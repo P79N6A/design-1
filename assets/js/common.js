@@ -1017,24 +1017,10 @@ var vm = new Vue({
       new Viewer(document.querySelector('#app .content'))
     }
 
-    !(function(e, t, n, g, i) {
-      ;(e[i] =
-        e[i] ||
-        function() {
-          ;(e[i].q = e[i].q || []).push(arguments)
-        }),
-        (n = t.createElement('script')),
-        (tag = t.getElementsByTagName('script')[0]),
-        (n.async = 1),
-        (n.src =
-          ('https:' == document.location.protocol ? 'https://' : 'http://') +
-          g),
-        tag.parentNode.insertBefore(n, tag)
-    })(window, document, 'script', 'assets.growingio.com/2.1/gio.js', 'gio')
-
-    gio('init', '96befec86c2dc9ca', {})
-
-    gio('send')
+    if (window.gio) {
+      gio('init', '96befec86c2dc9ca', {})
+      gio('send')
+    }
 
     document.title = i18n.t(document.title)
   },
