@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>体验设计指南</title>
+    <link rel="stylesheet" href="./assets/css/_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/font_719179_rmp9wa6m5l.css"
+    />
+    <link rel="stylesheet" href="./assets/css/element-ui.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./home/index.css" />
+    <link rel="stylesheet" href="./home/demo-page.css" />
+    <link rel="stylesheet" href="./home/imagehover.css" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="./assets/css/docsearch.css" />
+    <script src="./assets/js/plugins/vue.min.js"></script>
+    <script src="./assets/js/plugins/vue-i18n.min.js"></script>
+    <script src="./assets/js/plugins/element-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app" v-cloak>
+      <top-bar></top-bar>
+      <layout-header :lang="lang" is-home></layout-header>
+
+      <div class="layout-container">
+        <div id="bannervideo" class="banner">
+          <div class="banner-wrap">
+            <div class="left">
+              <div class="alibaba">Alibaba.com</div>
+              <div class="title">{{ $t('体验设计指南') }}</div>
+              <p class="internal">{{ $t('一套符合B类场景的设计体系') }}</p>
+              <div class="handle">
+                <a href="./brand/index.html"
+                  ><button class="btn01">{{ $t('查看更多') }} ></button></a
+                >
+              </div>
+            </div>
+          </div>
+          <video autoplay muted loop id="bgvid">
+            <source src="./home/img/video01.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="content">
+          <div>
+            <div class="item item-01">
+              <div class="left">
+                <h2>{{ $t('品牌概览') }}</h2>
+                <div class="item-nav-wrap">
+                  <p>
+                    {{
+                      $t(
+                        '通过品牌了解我们的愿景及服务对象，帮助你在设计的时候更好的进行判断和选择，并以同样的性格特质向用户呈现。'
+                      )
+                    }}
+                  </p>
+                </div>
+                <div class="button">
+                  <a href="./brand/index.html"
+                    ><button class="btn02">{{ $t('查看更多') }} ></button></a
+                  >
+                </div>
+              </div>
+              <div class="right">
+                <div class="count count-0 wow slideInRight">01</div>
+                <div class="img-box wow slideInUp" data-wow-delay="0.5s">
+                  <img
+                    src="https://img.alicdn.com/tfs/TB1RsqDENjaK1RjSZKzXXXVwXXa-997-500.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="item item-02">
+              <div class="left">
+                <h2>{{ $t('品牌调性') }}</h2>
+                <div class="item-nav-wrap">
+                  <p>
+                    {{ $t('在这里了解我们以何种语调向用户传递我们的声音。') }}
+                  </p>
+                </div>
+                <div class="button">
+                  <a href="./brand/product/index.html"
+                    ><button class="btn01">{{ $t('查看更多') }} ></button></a
+                  >
+                </div>
+              </div>
+              <div class="right">
+                <div class="count count-right  wow slideInRight">02</div>
+                <div class="img-box wow slideInUp" data-wow-delay="0.5s">
+                  <img
+                    src="https://img.alicdn.com/tfs/TB1cvqeEMHqK1RjSZFgXXa7JXXa-877-440.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="item item-03">
+              <div class="left">
+                <h2>{{ $t('视觉指南') }}</h2>
+                <div class="item-nav-wrap">
+                  <p>
+                    {{
+                      $t(
+                        '在这里了解我们可以使用的设计元素，这些元素符合整个品牌的定义，并且经过设计实验的验证，可以安心的被使用。'
+                      )
+                    }}
+                  </p>
+                </div>
+                <div class="button">
+                  <a href="./guidelines/index.html"
+                    ><button class="btn02">{{ $t('查看更多') }} ></button></a
+                  >
+                </div>
+              </div>
+              <div class="right">
+                <div class="count count-left wow slideInRight">03</div>
+                <div class="img-box wow slideInUp" data-wow-delay="0.5s">
+                  <img
+                    src="https://img.alicdn.com/tfs/TB14U1cESzqK1RjSZFLXXcn2XXa-996-500.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="item item-04">
+              <div class="left">
+                <h2>{{ $t('动效指南') }}</h2>
+                <div class="item-nav-wrap">
+                  <p>{{ $t('基于最简单、能解决问题的原则来设计动效。') }}</p>
+                </div>
+                <div class="button">
+                  <a href="./pattern/media/index.html"
+                    ><button class="btn01">{{ $t('查看更多') }} ></button></a
+                  >
+                </div>
+              </div>
+              <div class="right">
+                <div class="count count-right wow slideInRight">04</div>
+                <div class="img-box wow slideInUp" data-wow-delay="0.5s">
+                  <img
+                    src="https://img.alicdn.com/tfs/TB1yR1cENTpK1RjSZR0XXbEwXXa-996-500.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="item item-05">
+              <div class="left">
+                <h2>{{ $t('设计资料库') }}</h2>
+                <div class="item-nav-wrap">
+                  <p>
+                    {{
+                      $t(
+                        '在这里，可以看到历史积累的各项用户体验数据及资料，并下载辅助设计的工具。'
+                      )
+                    }}
+                  </p>
+                </div>
+                <div class="button">
+                  <a href="./library/index.html"
+                    ><button class="btn02">{{ $t('查看更多') }} ></button></a
+                  >
+                </div>
+              </div>
+
+              <div class="right">
+                <div class="count count-left wow slideInRight">05</div>
+                <div class="img-box wow slideInUp" data-wow-delay="0.5s">
+                  <img
+                    src="https://img.alicdn.com/tfs/TB1ApylEMHqK1RjSZFkXXX.WFXa-997-501.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <layout-footer></layout-footer>
+
+        <div class="loading">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/plugins/docsearch.min.js"></script>
+    <script src="./assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/plugins/utils.js"></script>
+    <script src="./assets/js/plugins/wow.min.js"></script>
+    <script src="./home/locale.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/common.js"></script>
+  </body>
+</html>
